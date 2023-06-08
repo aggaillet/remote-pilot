@@ -1,0 +1,93 @@
+:root {
+    --primary: rgb(251, 245, 243);
+    --secondary: rgb(219, 84, 97);
+    --tertiary: rgb(48, 48, 48);
+    --primary-font: monospace, monospace;
+    --secondary-font: 'Raleway', sans-serif
+}
+  
+  
+body{
+    margin: 0;
+}
+  
+/* Hide scrollbars but mantain functionlity */
+  
+body::-webkit-scrollbar { 
+    display: none;
+}
+  
+body{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+  
+  
+/* --- */
+  
+body::after {
+    content: "";
+    background-image: url("resources/stock/pexels-captsopon-3402846.jpg");
+    background-size: cover;
+    opacity: 0.9;
+    filter: brightness(10%);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -999999;
+}
+  
+.content-div-class{
+    min-height: 60vh;
+    padding: 5% 5% 2% 5%;
+}
+
+p {
+    color: var(--tertiary);
+    max-width: min(630px, 100vw);
+    min-width: 10vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+  
+p.p-light {
+    color: var(--primary);
+    max-width: min(630px, 100vw);
+    font-family: var(--primary-font);
+    font-size: 3vh;
+    line-height: 1;
+}
+
+a:link {
+    color: var(--tertiary);
+}
+  
+a:visited {
+    color: var(--tertiary);
+}
+  
+a:hover {
+    color: var(--secondary);
+}
+
+.div2 {
+    background-color: var(--primary);
+    margin: 5vh;
+    padding: 5vh;
+    font-size: 3vh;
+    display: inline-block;
+    max-height: 855px;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+h2{
+    color: var(--tertiary);
+    font-family: var(--primary-font);
+    font-size: 5vh;
+    line-height: 1;
+    padding-left: 5vh;
+    padding-top: 10vh;
+}

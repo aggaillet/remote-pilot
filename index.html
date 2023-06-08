@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <title>Angelo G. Gaillet</title>
+    <link rel="icon" href="resources/favicon.png">
+    <meta property="og:type" content="Website" />
+    <meta name="author" content="Angelo G. Gaillet" />
+    <meta name="title" property="og:title" content="Angelo G. Gaillet" />
+    <meta name="description" content="Personal website of Angelo G. Gaillet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Custom CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style/common.css">
+    <link rel="stylesheet" type="text/css" href="style/header.css">
+    <link rel="stylesheet" type="text/css" href="style/footer.css">
+    
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="row" id="navbar-row" style="background-color: var(--tertiary); width: 100vw; height: 8vh;">
+                <ul class="navbar-nav">
+                    <a class="nav-link external" id="opsarch-link" href="#">
+                        <li class="nav-item">OPERATIONAL ARCHITECTURE</li>
+                    </a>
+                    <a class="nav-link external" id="funcarch-link" href="#">
+                        <li class="nav-item">FUNCTIONAL ARCHITECURE</li>
+                    </a>
+                    <a class="nav-link external" id="logiarch-link" href="#">
+                        <li class="nav-item">LOGICAL ARCHITECTURE</li>
+                    </a>
+                    <a class="nav-link external" id="logiblocks-link" href="#">
+                        <li class="nav-item">LOGICAL BLOCKS</li>
+                    </a>
+                    <a class="nav-link external" id="scen1-link" href="#">
+                        <li class="nav-item">SCENARIO 1</li>
+                    </a>
+                    <a class="nav-link external" id="scen2-link" href="#">
+                        <li class="nav-item">SCENARIO 2</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <div style="background-color: rgb(230, 235, 236); padding: 13vh 0vh 0vh 5vw">
+            <img id="image" width="70%" height="770vh" style="margin-left: 12%;" src="welcome-image.svg">
+        </div>
+
+        <div id="footer">
+            <div id="copyright">
+                <h5 id="copyText">&#169; </h5>
+                <script> document.getElementById("copyText").innerHTML = "Angelo G. Gaillet, Mohsin Jaleel, Karan Kaler, Prakhar S. Mathur &#169 " + new Date().getFullYear(); </script>
+            </div>
+            <div id="privacy-div">
+                <a id="privacy-link" href="privacy-policy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function edit(img_path){
+            document.getElementById("image").src=img_path;
+        }
+        
+        document.getElementById("opsarch-link").setAttribute('onclick', 'edit("diagrams/1OperationalArchitecure.svg")');
+        document.getElementById("funcarch-link").setAttribute('onclick', 'edit("diagrams/2FunctionalArchitecture.svg")');
+        document.getElementById("logiarch-link").setAttribute('onclick', 'edit("diagrams/3LogicalArchitecture.svg")');
+        document.getElementById("logiblocks-link").setAttribute('onclick', 'edit("diagrams/4LogicalBlocks.svg")');
+        document.getElementById("scen1-link").setAttribute('onclick', 'edit("diagrams/5Scenario1.svg")');
+        document.getElementById("scen2-link").setAttribute('onclick', 'edit("diagrams/6Scenario 2.svg")');
+    </script>
+</html>
